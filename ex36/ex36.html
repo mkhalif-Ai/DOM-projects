@@ -4,11 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <style>
+        #colorPreview {
+            width: 200px;
+            height: 200px;
+            margin: 20px 0;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #colorHistory {
+            list-style: none;
+            padding: 0;
+        }
+        #colorHistory li {
+            margin: 5px 0;
+        }
+    </style>
 </head>
 <body>
-     <h1 id="header">my info</h1>
-    <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa maxime eos veritatis doloremque, maiores quo fuga aut nihil nam, distinctio impedit recusandae sint iure! Aperiam eius nesciunt aspernatur in ad doloribus? Commodi tenetur illo nisi odit, odio asperiores dignissimos voluptatibus laboriosam perferendis dolores repellendus dicta fuga vel quo nesciunt similique!/p>
-    <button onclick="changeContent()">Change Content</button>
-    <script  src="ex36.js"></script>
+    
+     <h1>Interactive Color Picker</h1>
+
+    <label for="colorPicker">Choose a color:</label>
+    <input type="color" id="colorPicker">
+
+    <div id="colorPreview">Color choosed</div>
+
+    <h2>Color History</h2>
+    <ul id="colorHistory"></ul>
+
+    <button id="clearHistoryButton">Clear History</button>
+
+    <script src="ex36.js"></script>
 </body>
 </html>
